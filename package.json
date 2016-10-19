@@ -1,5 +1,6 @@
 {
   "name": "chai-calling-with",
+  "version": "1.0.0",
   "description": "Chai assertions for testing exceptions in a readable way",
   "main": "index.js",
   "scripts": {
