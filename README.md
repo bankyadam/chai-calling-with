@@ -17,6 +17,24 @@ var chai = require('chai');
 chai.use(require('chai-calling-with'));
 ```
 
+## Assertions
+
+### .calling
+
+```javascript
+expect(myFunction).when.calling.to.throw;
+
+myFunction.should.calling.throw;
+```
+
+### .callingWith
+
+```javascript
+expect(myFunction).when.callingWith('foo', 'bar').to.throw;
+
+myFunction.should.callingWith('foo', 'bar').throw;
+```
+
 ## Contributing
 
 Please submit all issues and pull requests to the [adambrunner/chai-calling-with](https://github.com/adambrunner/chai-calling-with) repository!
