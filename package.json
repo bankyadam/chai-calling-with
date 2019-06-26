@@ -11,12 +11,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/adambrunner/chai-calling-with.git"
+    "url": "git+https://github.com/bankyadam/chai-calling-with.git"
   },
   "author": "Emarsys",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/adambrunner/chai-calling-with/issues"
+    "url": "https://github.com/bankyadam/chai-calling-with/issues"
   },
   "pre-commit": [
     "code-style",
@@ -39,5 +39,5 @@
   "engines": {
     "node": "6.7.0"
   },
-  "homepage": "https://github.com/adambrunner/chai-calling-with#readme"
+  "homepage": "https://github.com/bankyadam/chai-calling-with#readme"
 }
