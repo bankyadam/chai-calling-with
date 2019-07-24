@@ -4,8 +4,9 @@
   "description": "Chai assertions for testing exceptions in a readable way",
   "main": "index.js",
   "scripts": {
-    "test": "NODE_ENV=test mocha $(find . -name \"*.spec.js\" -not -path \"./node_modules/*\")",
-    "code-style": "eslint $(find . -name \"*.js\" -not -path \"./node_modules/*\")",
+    "test": "npm run test:unit && npm run test:style",
+    "test:unit": "NODE_ENV=test mocha *.spec.js",
+    "test:style": "eslint --fix --ext .js .",
     "validate-commit-msg": "validate-commit-msg",
     "semantic-release": "semantic-release"
   },
@@ -19,7 +20,7 @@
     "url": "https://github.com/bankyadam/chai-calling-with/issues"
   },
   "pre-commit": [
-    "code-style",
+    "test",
     "validate-commit-msg"
   ],
   "peerDependencies": {
@@ -27,17 +28,18 @@
   },
   "devDependencies": {
     "chai": "4.2.0",
-    "eslint": "6.0.1",
+    "eslint": "6.1.0",
     "eslint-config-emarsys": "5.1.0",
     "eslint-plugin-no-only-tests": "2.3.1",
     "eslint-plugin-security": "1.4.0",
-    "mocha": "6.1.4",
+    "mocha": "6.2.0",
     "pre-commit": "1.2.2",
-    "semantic-release": "15.13.17",
+    "semantic-release": "15.13.18",
     "validate-commit-message": "3.0.1"
   },
   "engines": {
-    "node": "6.7.0"
+    "node": "10.16.0",
+    "npm": "6.10.2"
   },
   "homepage": "https://github.com/bankyadam/chai-calling-with#readme"
 }
