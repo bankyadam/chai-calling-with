@@ -7,7 +7,6 @@
     "test": "npm run test:unit && npm run test:style",
     "test:unit": "NODE_ENV=test mocha *.spec.js",
     "test:style": "eslint --fix --ext .js .",
-    "validate-commit-msg": "validate-commit-msg",
     "semantic-release": "semantic-release"
   },
   "repository": {
@@ -20,22 +19,20 @@
     "url": "https://github.com/bankyadam/chai-calling-with/issues"
   },
   "pre-commit": [
-    "test",
-    "validate-commit-msg"
+    "test"
   ],
   "peerDependencies": {
-    "chai": ">= 2.1.2 <= 4"
+    "chai": ">= 2.1.2 <= 5"
   },
   "devDependencies": {
     "chai": "4.2.0",
-    "eslint": "6.1.0",
+    "eslint": "6.2.2",
     "eslint-config-emarsys": "5.1.0",
     "eslint-plugin-no-only-tests": "2.3.1",
     "eslint-plugin-security": "1.4.0",
     "mocha": "6.2.0",
     "pre-commit": "1.2.2",
-    "semantic-release": "15.13.18",
-    "validate-commit-message": "3.0.1"
+    "semantic-release": "15.13.24"
   },
   "engines": {
     "node": "10.16.0",
