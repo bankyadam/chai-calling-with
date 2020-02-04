@@ -37,7 +37,7 @@ myFunction.should.callingWith('foo', 'bar').throw;
 
 ## Contributing
 
-Please submit all issues and pull requests to the [adambrunner/chai-calling-with](https://github.com/adambrunner/chai-calling-with) repository!
+Please submit all issues and pull requests to the [bankyadam/chai-calling-with](https://github.com/bankyadam/chai-calling-with) repository!
 
 ## Tests
 
@@ -45,4 +45,4 @@ Run tests using `npm test`.
 
 ## Support
 
-If you have any problem or suggestion please open an issue [here](https://github.com/adambrunner/chai-calling-with/issues).
+If you have any problem or suggestion please open an issue [here](https://github.com/bankyadam/chai-calling-with/issues).
